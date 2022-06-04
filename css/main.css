@@ -1,0 +1,229 @@
+:root {
+	/* Primary */
+	--Gradient: hsl(6, 100%, 80%) to hsl(335, 100%, 65%);
+
+	/* Neutral */
+	--Grayish-Blue: hsl(229, 7%, 55%);
+	--Pale-Blue: hsl(243, 100%, 93%);
+	--Very-Dark-Blue: hsl(229, 57%, 11%);
+	--Dark-Blue: hsl(228, 56%, 26%);
+}
+
+body {
+	min-height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 14px;
+	font-family: 'Raleway', sans-serif;
+	background: var(--Very-Dark-Blue) url(../assets/imgs/bg-desktop.png) no-repeat 0 20rem;
+	background-size: 100% 350px;
+}
+
+img {
+	display: block;
+}
+
+.container {
+	width: 1000px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.container .part__one,
+.container .part__two {
+	background-color: var(--Dark-Blue);
+	padding: 20px;
+	box-shadow: 2px 2px 10px 5px rgba(0,0,0, .2);
+}
+
+.container .part__one {
+	width: 200px;
+	margin-right: 20px;
+	border-radius: 6px 90px 6px 6px;
+	-webkit-border-radius: 6px 90px 6px 6px;
+	-moz-border-radius: 6px 90px 6px 6px;
+	-ms-border-radius: 6px 90px 6px 6px;
+	-o-border-radius: 6px 90px 6px 6px;
+}
+
+.container .part__one .logo {
+	width: 100px;
+	margin-bottom: 20px;
+	padding-left: 10px;
+}
+
+.section__icons {
+	display: flex;
+	flex-direction: row;
+}
+
+.section__icons .icons {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 5px;
+	background-color: var(--Very-Dark-Blue);
+	border-radius: 6px;
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	-ms-border-radius: 6px;
+	-o-border-radius: 6px;
+}
+
+.section__icons .icons img { 
+	width: 18px;
+	padding: 10px;
+}
+
+.container .part__two {
+	position: relative;
+	margin-top: 1.6rem;
+	width: 500px;
+	border-radius: 6px;
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	-ms-border-radius: 6px;
+	-o-border-radius: 6px;
+}
+
+.part__two .text__box {
+	display: flex;
+	justify-content:center;
+	align-items: center;
+	position: absolute;
+	padding: 5px 20px;
+	top: -2rem;
+	right: 2rem;
+	background-color: #ffffff;
+	clip-path: polygon(0 0, 100% 0%, 100% 51%, 100% 90%, 80% 65%, 0 65%);
+	border-radius: 6px;
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	-ms-border-radius: 6px;
+	-o-border-radius: 6px;
+}
+
+.part__two .text__box .box__text {
+	color: var(--Grayish-Blue);
+	font-size: .9em;
+	margin-bottom: 2rem;
+}
+
+.part__two .text__box .box__text span{
+	font-size: 2em;
+	font-weight: 700;
+	color: var(--Very-Dark-Blue);
+}
+
+.container .part__two p {
+	color: var(--Pale-Blue);
+	margin: 5px 0 0 0;
+	font-size: .9em;
+}
+
+.container .part__two .text {
+	margin-bottom: 20px;
+}
+
+.container .part__two .gb {
+	color: #ffffff;
+	font-weight: 700;
+}
+
+.container .part__two .gb__max-min {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.br__progress,
+.br__progress .progress__porcen {
+	border-radius: 50px;
+	-webkit-border-radius: 50px;
+	-moz-border-radius: 50px;
+	-ms-border-radius: 50px;
+	-o-border-radius: 50px;
+} 
+
+.br__progress {
+	width: 100%;
+	height: 13px;
+	background-color: var(--Very-Dark-Blue);
+	padding: 2px;
+}
+
+.br__progress .progress__porcen {
+	width: 75%;
+	height: 13px;
+	background: linear-gradient(90deg, hsl(6, 100%, 80%) , hsl(335, 100%, 65%));
+	display: flex;
+	justify-content: end;
+	align-items: center;
+}
+
+.br__progress .progress__porcen .circle{
+	margin: 2px;
+	width: 10px;
+	height: 10px;
+	background-color: #ffffff;
+	border-radius: 50px;
+	-webkit-border-radius: 50px;
+	-moz-border-radius: 50px;
+	-ms-border-radius: 50px;
+	-o-border-radius: 50px;
+}
+
+@media screen and (min-width: 320px) and (max-width: 860px) {
+
+	body {
+		background: var(--Very-Dark-Blue) url(../assets/imgs/bg-mobile.png) no-repeat ;
+		background-size: 100% 100%;
+		position: relative;
+	}
+	
+	.container {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.container .part__one{
+		margin: 0;
+	}
+
+	.container .part__two{
+		width: 200px;	
+	}
+
+	.container .part__two .text {
+		font-size: .8em;
+	}
+
+	.container .part__two .gb__max-min .gb {
+		font-size: .8;
+	}
+
+	.part__two .text__box {
+		display: flex;
+		justify-content:center;
+		align-items: center;
+		position: absolute;
+		padding: 5px 15px;
+		top: 6.2rem;
+		right: 4rem;
+		clip-path: none;
+		border-radius: 6px;
+		-webkit-border-radius: 6px;
+		-moz-border-radius: 6px;
+		-ms-border-radius: 6px;
+		-o-border-radius: 6px;
+	}
+
+	.part__two .text__box .box__text {
+		font-size: .9em;
+		margin: 0;
+	}
+}

@@ -28,7 +28,7 @@ Los usuarios deben ser capaces de:
 
 - Escritorio
 
-![Componente que muestra el almacenamiento en la nube](./desktop.png)
+![Componente que muestra el almacenamiento en la nube](./dektop.png)
 
 - Móvil
 
@@ -36,8 +36,8 @@ Los usuarios deben ser capaces de:
 
 ### Enlaces
 
-- URL de la solución (Frontend Mentor): [Solución en Frontend Mentor](https://www.frontendmentor.io/solutions/accessibility-flexbox-position-gridlayout-mobilefirst-mediaqueries-wR0XUhu7zk).
-- URL del sitio en vivo: [En vivo](https://boudgnosis.github.io/social-proof-section-master/)
+- URL de la solución (Frontend Mentor): [Solución en Frontend Mentor](https://www.frontendmentor.io/solutions/flexbox-gridlayout-responsivedesign-clippath-queries-mF1seRtWS0).
+- URL del sitio en vivo: [En vivo](https://boudgnosis.github.io/fylo-data-storage-component/)
 
 ## Mi Proceso
 
